@@ -370,8 +370,8 @@ a { color: var(--blue); }
   align-items: stretch;
 }
 
-@media (min-width: 900px) {
-  .pricing-grid { grid-template-columns: repeat(3, 1fr); }
+@media (min-width: 580px) {
+  .pricing-grid { grid-template-columns: repeat(2, 1fr); max-width: 720px; margin-left: auto; margin-right: auto; }
 }
 
 .price-card {
