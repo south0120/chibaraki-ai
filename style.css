@@ -33,6 +33,16 @@ h1, h2, h3, .brand-name, .plan-name {
 img { max-width: 100%; height: auto; }
 a { color: var(--blue); }
 
+/* ---------- Three.js 動的背景 ---------- */
+#bg-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
 /* ---------- ヘッダー ---------- */
 .site-header {
   position: sticky;
@@ -112,9 +122,8 @@ a { color: var(--blue); }
 /* ---------- ヒーロー ---------- */
 .hero {
   background:
-    radial-gradient(circle at 15% 20%, rgba(46, 125, 209, 0.10), transparent 45%),
-    radial-gradient(circle at 85% 80%, rgba(127, 194, 67, 0.12), transparent 45%),
-    var(--bg);
+    radial-gradient(circle at 15% 20%, rgba(46, 125, 209, 0.08), transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(127, 194, 67, 0.10), transparent 45%);
   padding: 64px 20px 56px;
   text-align: center;
 }
@@ -254,8 +263,8 @@ a { color: var(--blue); }
 }
 
 /* ---------- セクション共通 ---------- */
-.section { padding: 72px 20px; }
-.section-alt { background: var(--bg-alt); }
+.section { padding: 72px 20px; background: rgba(255, 255, 255, 0.82); }
+.section-alt { background: rgba(242, 248, 245, 0.88); }
 .section-inner { max-width: 1080px; margin: 0 auto; }
 .section-inner.narrow { max-width: 760px; }
 .section-inner.center { text-align: center; }
@@ -309,7 +318,21 @@ a { color: var(--blue); }
   box-shadow: var(--shadow);
 }
 
-.card-icon { font-size: 2rem; margin-bottom: 10px; }
+.card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.card-icon svg { width: 28px; height: 28px; }
+
+.card-icon.icon-blue { background: rgba(46, 125, 209, 0.12); color: var(--blue); }
+.card-icon.icon-teal { background: rgba(63, 168, 160, 0.14); color: #2f8d86; }
+.card-icon.icon-green { background: rgba(127, 194, 67, 0.16); color: #5a9a22; }
 
 .card h3 {
   font-size: 1.1rem;

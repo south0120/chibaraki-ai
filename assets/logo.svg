@@ -1,70 +1,88 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="ちばらきAIコミュニティ ロゴ">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="60%">
       <stop offset="0%" stop-color="#2e7dd1"/>
       <stop offset="100%" stop-color="#7fc243"/>
     </linearGradient>
-    <linearGradient id="map" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3b8ad9"/>
-      <stop offset="55%" stop-color="#3fa8a0"/>
-      <stop offset="100%" stop-color="#8bc53f"/>
+    <linearGradient id="map" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#8bc53f"/>
+      <stop offset="45%" stop-color="#3fa8a0"/>
+      <stop offset="100%" stop-color="#2e7dd1"/>
+    </linearGradient>
+    <linearGradient id="txt" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2e7dd1"/>
+      <stop offset="100%" stop-color="#7fc243"/>
     </linearGradient>
   </defs>
 
   <!-- 外周リング -->
-  <circle cx="256" cy="256" r="240" fill="#ffffff"/>
-  <circle cx="256" cy="256" r="240" fill="none" stroke="url(#bg)" stroke-width="14"/>
+  <circle cx="256" cy="256" r="242" fill="#ffffff"/>
+  <circle cx="256" cy="256" r="242" fill="none" stroke="url(#ring)" stroke-width="12"/>
 
-  <!-- ネットワークノード（左側） -->
-  <g stroke="#9fc2e8" stroke-width="3" fill="none" opacity="0.85">
-    <path d="M90 180 L130 140 L170 175 L135 220 Z"/>
-    <path d="M90 180 L110 250 L135 220"/>
-    <path d="M110 250 L95 320 L140 355 L175 300 L135 220"/>
-    <path d="M95 320 L140 355"/>
-    <path d="M130 140 L175 110"/>
+  <!-- ネットワークノード（左側・ブルー） -->
+  <g stroke="#a9c8ea" stroke-width="2.5" fill="none" opacity="0.8">
+    <path d="M78 200 L112 158 L150 190 L118 232 Z"/>
+    <path d="M78 200 L92 268 L118 232"/>
+    <path d="M92 268 L80 330 L122 362 L152 310 L118 232"/>
+    <path d="M80 330 L122 362"/>
+    <path d="M112 158 L146 122"/>
+    <path d="M150 190 L118 232"/>
   </g>
   <g fill="#3b8ad9">
-    <circle cx="130" cy="140" r="9"/>
-    <circle cx="90" cy="180" r="7"/>
-    <circle cx="170" cy="175" r="11"/>
-    <circle cx="110" cy="250" r="12"/>
-    <circle cx="135" cy="220" r="6"/>
-    <circle cx="95" cy="320" r="8"/>
-    <circle cx="140" cy="355" r="10"/>
-    <circle cx="175" cy="110" r="6"/>
+    <circle cx="112" cy="158" r="8"/>
+    <circle cx="78" cy="200" r="6"/>
+    <circle cx="150" cy="190" r="10"/>
+    <circle cx="92" cy="268" r="11"/>
+    <circle cx="118" cy="232" r="5"/>
+    <circle cx="80" cy="330" r="7"/>
+    <circle cx="122" cy="362" r="9"/>
+    <circle cx="146" cy="122" r="5"/>
   </g>
 
-  <!-- ネットワークノード（右下・緑） -->
-  <g stroke="#b9dc8f" stroke-width="3" fill="none" opacity="0.9">
-    <path d="M300 430 L345 400 L390 425 L360 460 L310 465 Z"/>
-    <path d="M345 400 L360 460"/>
+  <!-- ネットワークノード（下部・グリーン） -->
+  <g stroke="#bfdf95" stroke-width="2.5" fill="none" opacity="0.85">
+    <path d="M300 428 L346 402 L392 424 L362 458 L312 462 Z"/>
+    <path d="M346 402 L362 458"/>
+    <path d="M256 452 L300 428"/>
   </g>
   <g fill="#8bc53f">
-    <circle cx="300" cy="430" r="8"/>
-    <circle cx="345" cy="400" r="10"/>
-    <circle cx="390" cy="425" r="7"/>
-    <circle cx="360" cy="460" r="6"/>
-    <circle cx="310" cy="465" r="5"/>
+    <circle cx="300" cy="428" r="7"/>
+    <circle cx="346" cy="402" r="9"/>
+    <circle cx="392" cy="424" r="6"/>
+    <circle cx="362" cy="458" r="5"/>
+    <circle cx="312" cy="462" r="4"/>
+    <circle cx="256" cy="452" r="5"/>
   </g>
 
   <!-- 千葉・茨城の地図シルエット（デフォルメ） -->
+  <g transform="translate(-42, 8) scale(0.94)">
   <path fill="url(#map)" d="
-    M286 78
-    C 304 68, 322 84, 314 104
-    C 336 118, 346 158, 338 196
-    C 334 232, 348 258, 372 280
-    C 390 296, 386 328, 362 338
-    C 372 368, 358 404, 332 428
-    C 316 450, 288 460, 272 442
-    C 256 424, 262 404, 250 388
-    C 236 372, 242 352, 230 336
-    C 216 320, 226 302, 216 284
-    C 206 264, 214 242, 208 218
-    C 202 192, 216 172, 214 146
-    C 212 118, 232 100, 254 96
-    C 266 92, 272 84, 286 78
+    M 292 92
+    C 300 88, 308 96, 304 106
+    C 312 122, 316 158, 308 198
+    C 304 236, 310 258, 330 284
+    C 340 296, 336 308, 322 310
+    C 300 328, 280 362, 270 400
+    C 264 424, 252 444, 234 448
+    C 220 450, 216 434, 224 422
+    C 230 408, 226 396, 216 390
+    C 205 382, 200 370, 204 356
+    C 208 344, 202 334, 192 328
+    C 182 320, 180 306, 188 296
+    C 178 288, 172 276, 176 262
+    C 168 250, 164 236, 170 222
+    C 162 205, 164 185, 174 172
+    C 168 155, 176 138, 192 130
+    C 200 118, 214 108, 230 106
+    C 248 98, 272 90, 292 92
     Z"/>
   <!-- 県境ライン（利根川） -->
-  <path fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round"
-    d="M212 286 q34 18 66 8 t80 -16"/>
+  <path fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round"
+    d="M184 300 q26 16 54 10 t54 -10 q20 -4 32 -12"/>
+  </g>
+
+  <!-- ロゴテキスト -->
+  <text x="356" y="210" text-anchor="middle" font-family="'Zen Maru Gothic','Hiragino Maru Gothic ProN','Noto Sans JP',sans-serif" font-weight="800" font-size="52" fill="url(#txt)">ちばらき</text>
+  <text x="356" y="322" text-anchor="middle" font-family="'Zen Maru Gothic','Noto Sans JP',sans-serif" font-weight="900" font-size="116" letter-spacing="4" fill="url(#txt)">AI</text>
+  <text x="356" y="382" text-anchor="middle" font-family="'Zen Maru Gothic','Hiragino Maru Gothic ProN','Noto Sans JP',sans-serif" font-weight="800" font-size="32" fill="#2d3e50">コミュニティ</text>
 </svg>
