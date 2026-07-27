@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="ちばらきAIコミュニティ ロゴ">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2e7dd1"/>
+      <stop offset="100%" stop-color="#7fc243"/>
+    </linearGradient>
+    <linearGradient id="map" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b8ad9"/>
+      <stop offset="55%" stop-color="#3fa8a0"/>
+      <stop offset="100%" stop-color="#8bc53f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 外周リング -->
+  <circle cx="256" cy="256" r="240" fill="#ffffff"/>
+  <circle cx="256" cy="256" r="240" fill="none" stroke="url(#bg)" stroke-width="14"/>
+
+  <!-- ネットワークノード（左側） -->
+  <g stroke="#9fc2e8" stroke-width="3" fill="none" opacity="0.85">
+    <path d="M90 180 L130 140 L170 175 L135 220 Z"/>
+    <path d="M90 180 L110 250 L135 220"/>
+    <path d="M110 250 L95 320 L140 355 L175 300 L135 220"/>
+    <path d="M95 320 L140 355"/>
+    <path d="M130 140 L175 110"/>
+  </g>
+  <g fill="#3b8ad9">
+    <circle cx="130" cy="140" r="9"/>
+    <circle cx="90" cy="180" r="7"/>
+    <circle cx="170" cy="175" r="11"/>
+    <circle cx="110" cy="250" r="12"/>
+    <circle cx="135" cy="220" r="6"/>
+    <circle cx="95" cy="320" r="8"/>
+    <circle cx="140" cy="355" r="10"/>
+    <circle cx="175" cy="110" r="6"/>
+  </g>
+
+  <!-- ネットワークノード（右下・緑） -->
+  <g stroke="#b9dc8f" stroke-width="3" fill="none" opacity="0.9">
+    <path d="M300 430 L345 400 L390 425 L360 460 L310 465 Z"/>
+    <path d="M345 400 L360 460"/>
+  </g>
+  <g fill="#8bc53f">
+    <circle cx="300" cy="430" r="8"/>
+    <circle cx="345" cy="400" r="10"/>
+    <circle cx="390" cy="425" r="7"/>
+    <circle cx="360" cy="460" r="6"/>
+    <circle cx="310" cy="465" r="5"/>
+  </g>
+
+  <!-- 千葉・茨城の地図シルエット（デフォルメ） -->
+  <path fill="url(#map)" d="
+    M286 78
+    C 304 68, 322 84, 314 104
+    C 336 118, 346 158, 338 196
+    C 334 232, 348 258, 372 280
+    C 390 296, 386 328, 362 338
+    C 372 368, 358 404, 332 428
+    C 316 450, 288 460, 272 442
+    C 256 424, 262 404, 250 388
+    C 236 372, 242 352, 230 336
+    C 216 320, 226 302, 216 284
+    C 206 264, 214 242, 208 218
+    C 202 192, 216 172, 214 146
+    C 212 118, 232 100, 254 96
+    C 266 92, 272 84, 286 78
+    Z"/>
+  <!-- 県境ライン（利根川） -->
+  <path fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round"
+    d="M212 286 q34 18 66 8 t80 -16"/>
+</svg>
