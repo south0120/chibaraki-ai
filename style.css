@@ -277,7 +277,7 @@ a { color: var(--blue); }
 .section-alt { background: rgba(242, 248, 245, 0.88); }
 .section-inner { max-width: 1080px; margin: 0 auto; }
 .section-inner.narrow { max-width: 760px; }
-.section-inner.center { text-align: center; }
+.section-inner.center, .center { text-align: center; }
 
 .section-title {
   font-size: clamp(1.25rem, 4.5vw, 2rem);
