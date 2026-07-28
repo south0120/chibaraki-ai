@@ -342,9 +342,9 @@ a { color: var(--blue); }
 
 .card-icon svg { width: 28px; height: 28px; }
 
-.card-icon.icon-blue { background: rgba(46, 125, 209, 0.12); color: var(--blue); }
-.card-icon.icon-teal { background: rgba(63, 168, 160, 0.14); color: #2f8d86; }
-.card-icon.icon-green { background: rgba(127, 194, 67, 0.16); color: #5a9a22; }
+.card-icon.icon-blue, .concept-icon.icon-blue { background: rgba(46, 125, 209, 0.12); color: var(--blue); }
+.card-icon.icon-teal, .concept-icon.icon-teal { background: rgba(63, 168, 160, 0.14); color: #2f8d86; }
+.card-icon.icon-green, .concept-icon.icon-green { background: rgba(127, 194, 67, 0.16); color: #5a9a22; }
 
 .card h3 {
   font-size: 1.1rem;
@@ -690,10 +690,16 @@ a { color: var(--blue); }
 }
 
 .concept-icon {
-  font-size: 1.8rem;
-  display: block;
-  margin-bottom: 0.6rem;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
 }
+
+.concept-icon svg { width: 28px; height: 28px; }
 
 .concept-item h3 {
   font-size: 1rem;
