@@ -696,7 +696,7 @@ a { color: var(--blue); }
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 14px;
+  margin-bottom: 14px;
 }
 
 .concept-icon svg { width: 28px; height: 28px; }
