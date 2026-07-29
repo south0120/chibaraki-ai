@@ -773,18 +773,15 @@ ul, ol { list-style: none; }
 .card-grid.cols-4 { grid-template-columns: repeat(4, 1fr); gap: 20px; }
 .card-grid.cols-4 .card { padding: 30px 20px; }
 
-/* ---------- ①中央デバイス＋左右人物（commune hero下風・multiplyで背景抜き） ---------- */
-.device-section { padding-top: 40px; padding-bottom: 72px; }
-.device-panel {
-  max-width: 900px;
-  margin: 0 auto;
-  display: grid;
-  place-items: center;
+/* ---------- コンセプト内デバイスイラスト（サブコメ↔カードの間・multiplyで背景抜き・枠なし） ---------- */
+.concept-device {
+  max-width: 700px;
+  margin: 4px auto 40px;
 }
-.device-panel img {
+.concept-device img {
   width: 100%;
   height: auto;
-  mix-blend-mode: multiply; /* 白背景を抜いてページに自然に溶け込ませる */
+  mix-blend-mode: multiply; /* sky-pale背景に白を抜いて自然に合成・枠なし */
 }
 
 /* ---------- ②左大イラスト＋右テキスト（commune「最も選ばれている」風） ---------- */
