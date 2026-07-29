@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600;700&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,25 +18,27 @@
     <div class="header-inner">
       <a href="index.html" class="brand">
         <img src="assets/logo.webp" alt="ちばらきAIコミュニティ ロゴ" class="brand-logo">
-        <span class="brand-name">ちばらき<span class="brand-ai">AI</span>コミュニティ</span>
+        <span class="brand-name">ちばらきAIコミュニティ</span>
       </a>
     </div>
   </header>
 
   <main class="thanks-main">
-    <div class="thanks-box">
-      <img src="assets/logo.webp" alt="" class="hero-logo">
-      <h1>ご入会ありがとうございます！🎉</h1>
-      <p>決済が完了しました。<br>下のボタンからDiscordサーバーに参加してください。</p>
+    <div class="container">
+      <img src="assets/logo.webp" alt="" class="thanks-logo">
+      <h1>ご入会ありがとうございます</h1>
+      <p class="thanks-intro">決済が完了しました。<br>下のボタンからDiscordサーバーに参加してください。</p>
       <ol class="thanks-steps">
         <li>下のボタンからDiscordサーバーに参加する</li>
         <li>案内チャンネル「#はじめに」の手順に従って、決済時のメールアドレスを申請する</li>
         <li>運営が確認後、「レギュラー会員」ロールを付与します（通常24時間以内）</li>
       </ol>
-      <!-- TODO: Discordサーバーの招待リンクに差し替え（無期限・使用回数無制限で発行） -->
-      <a href="https://discord.gg/XXXXXXX" class="btn btn-primary btn-block" target="_blank" rel="noopener noreferrer">Discordサーバーに参加する</a>
-      <p class="plan-note">うまく参加できない場合は、LINE公式アカウントまたはメールでお問い合わせください。</p>
-      <a href="index.html" class="btn btn-ghost">トップページへ戻る</a>
+      <div class="thanks-actions">
+        <!-- TODO: Discordサーバーの招待リンクに差し替え（無期限・使用回数無制限で発行） -->
+        <a href="https://discord.gg/XXXXXXX" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Discordサーバーに参加する</a>
+        <p class="cta-sub">うまく参加できない場合は、LINE公式アカウントまたはメールでお問い合わせください。</p>
+        <a class="back-link" href="index.html">← トップページへ戻る</a>
+      </div>
     </div>
   </main>
 
