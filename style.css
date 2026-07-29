@@ -868,15 +868,19 @@ ul, ol { list-style: none; }
   0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
+@keyframes wave-flow-reverse {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
 .curve svg {
   width: 200%;
   margin-left: 0;
   animation: wave-flow 4s linear infinite;
   will-change: transform;
 }
-/* 前面（白）と背面（薄い青）は同方向・速度差だけつけて2層感を出す */
-.curve .wave-front { animation-duration: 4s; }
-.curve .wave-back  { animation-duration: 6s; }
+/* 前面（白）は右→左4s、背面（薄い青）は左→右6s の逆方向で交差させる */
+.curve .wave-front { animation: wave-flow 4s linear infinite; }
+.curve .wave-back  { animation: wave-flow-reverse 6s linear infinite; }
 
 /* 修正1: スマホでコンセプト3カードを横並び（アイコン左・テキスト右）*/
 @media (max-width: 640px) {
