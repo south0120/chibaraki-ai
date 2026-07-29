@@ -6,91 +6,99 @@
   <title>ちばらきAIコミュニティ｜千葉×茨城・常磐線沿線のAI学習コミュニティ</title>
   <meta name="description" content="松戸・柏・我孫子・取手・土浦・北千住エリアで活動する、オフライン交流重視のAIコミュニティ。KEITOさん監修。まずはLINEでイベント情報を受け取ってください。">
   <meta property="og:title" content="ちばらきAIコミュニティ">
-  <meta property="og:description" content="常磐線でつながる、千葉×茨城のAIコミュニティ。KEITOさん監修のオフライン学習の場です。">
+  <meta property="og:description" content="松戸・柏・我孫子・取手・土浦・北千住エリアで活動する、オフライン交流重視のAIコミュニティ。KEITOさん監修。">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/logo.png">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script type="importmap">
-    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js" } }
-  </script>
 </head>
 <body>
 
-  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <a href="#main" class="skip-link">本文へスキップ</a>
 
   <header class="site-header">
-    <div class="header-inner">
-      <a href="#top" class="brand">
-        <img src="assets/logo.webp" alt="ちばらきAIコミュニティ ロゴ" class="brand-logo">
-        <span class="brand-name">ちばらき<span class="brand-ai">AI</span>コミュニティ</span>
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.webp" alt="" width="36" height="36">
+        <span class="brand-name">ちばらきAIコミュニティ</span>
       </a>
-      <nav class="global-nav">
-        <a href="#about">こんな方へ</a>
-        <a href="#activities">活動内容</a>
-        <a href="#supervisor">監修について</a>
-        <a href="#faq">FAQ</a>
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <ul>
+          <li><a href="#audience">こんな方へ</a></li>
+          <li><a href="#activities">活動内容</a></li>
+          <li><a href="#supervisor">監修について</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
       </nav>
-      <a href="https://lin.ee/UhTqLIS" class="header-cta" target="_blank" rel="noopener noreferrer">LINE登録（無料）</a>
+      <a href="https://lin.ee/UhTqLIS" class="btn btn--primary btn--sm header-cta" target="_blank" rel="noopener noreferrer">LINE登録（無料）</a>
     </div>
   </header>
 
-  <main id="top">
+  <main id="main">
 
     <!-- ヒーロー -->
-    <section class="hero">
-      <div class="hero-inner">
-        <img src="assets/logo.webp" alt="ちばらきAIコミュニティ" class="hero-logo">
-        <p class="hero-lead">常磐線でつながる、千葉×茨城の</p>
-        <h1 class="hero-title">ちばらき<span class="gradient-text">AI</span>コミュニティ</h1>
-        <p class="hero-copy">
-          ひとりで触って、よくわからないまま終わりにしない。地元に、一緒に試せる仲間がいる。
-        </p>
-        <ul class="area-chips" aria-label="対象エリア">
-          <li>松戸</li><li>柏</li><li>我孫子</li><li>取手</li><li>土浦</li><li>北千住</li>
-        </ul>
-        <div class="hero-actions">
-          <a href="https://lin.ee/UhTqLIS" class="btn btn-primary" target="_blank" rel="noopener noreferrer" style="text-align:center;">
-            LINEで無料登録する<br><span style="font-size:0.82em;font-weight:500;">（イベント案内・AI情報が届く）</span>
-          </a>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div>
+          <p class="hero-lead">常磐線でつながる、千葉×茨城の</p>
+          <h1 id="hero-title">ちばらきAIコミュニティ</h1>
+          <p class="hero-copy">ひとりで触って、よくわからないまま終わりにしない。地元に、一緒に試せる仲間がいる。</p>
+          <ul class="area-chips" aria-label="対象エリア">
+            <li>松戸</li>
+            <li>柏</li>
+            <li>我孫子</li>
+            <li>取手</li>
+            <li>土浦</li>
+            <li>北千住</li>
+          </ul>
+          <p>
+            <a href="https://lin.ee/UhTqLIS" class="btn btn--primary" target="_blank" rel="noopener noreferrer">LINEで無料登録する</a>
+          </p>
+          <p class="btn-note">イベント案内・AI情報が届く</p>
+          <p class="hero-note">まずは無料イベントで雰囲気をつかんでください。いきなり有料入会の必要はありません。</p>
         </div>
-        <p class="hero-note">まずは無料イベントで雰囲気をつかんでください。いきなり有料入会の必要はありません。</p>
+        <div class="hero-visual">
+          <img src="assets/logo.webp" alt="ちばらきAIコミュニティ ロゴ" width="280" height="280">
+        </div>
       </div>
     </section>
 
     <!-- お知らせバー -->
-    <div class="notice-bar">
-      <span class="notice-tag">開催予定</span>
-      <p>【参加無料】はじめてのAI活用セミナー ＠柏駅周辺 — 詳細はLINEでお知らせします</p>
-    </div>
+    <aside class="notice-bar" aria-label="お知らせ">
+      <div class="container notice-inner">
+        <span class="notice-tag">開催予定</span>
+        <p class="notice-text">【参加無料】はじめてのAI活用セミナー ＠柏駅周辺 — 詳細はLINEでお知らせします</p>
+      </div>
+    </aside>
 
     <!-- こんな方へ -->
-    <section id="about" class="section">
-      <div class="section-inner">
-        <h2 class="section-title">こんな方のためのコミュニティです</h2>
-        <div class="card-grid three">
+    <section id="audience" class="section" aria-labelledby="audience-title">
+      <div class="container">
+        <span class="section-label">FOR YOU</span>
+        <h2 id="audience-title" class="section-title">こんな方のためのコミュニティです</h2>
+        <div class="grid grid--3">
           <div class="card">
-            <div class="card-icon icon-blue">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="14" rx="2"/><path d="M5 11h14"/><path d="M9 15h.01M15 15h.01"/><path d="M8 21l2-4M16 21l-2-4"/></svg>
-            </div>
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg>
+            </span>
             <h3>都心の勉強会は遠い</h3>
             <p>AIイベントはいつも都内ばかり。常磐線沿線・地元で気軽に参加できる場がほしい方へ。</p>
           </div>
           <div class="card">
-            <div class="card-icon icon-teal">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
             <h3>一人で学ぶのは続かない</h3>
             <p>ChatGPTや画像生成AIを触ってみたけど、一緒に試行錯誤できる仲間がほしい方へ。</p>
           </div>
           <div class="card">
-            <div class="card-icon icon-green">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.4 1 2.3h6c0-.9.4-1.8 1-2.3A7 7 0 0 0 12 2z"/></svg>
-            </div>
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </span>
             <h3>仕事や副業に活かしたい</h3>
             <p>AIを業務効率化や副業・地域ビジネスに活かすヒントを、実践者から直接聞きたい方へ。</p>
           </div>
@@ -99,173 +107,149 @@
     </section>
 
     <!-- コンセプト -->
-    <section class="section concept-section">
-      <div class="section-inner center">
-        <h2 class="section-title">スクールではなく、コミュニティです</h2>
-        <p class="concept-lead">ここは教わりに来る場所ではありません。一緒に学び、試して、教え合う場所です。</p>
-        <div class="concept-grid">
-          <div class="concept-item">
-            <span class="concept-icon icon-blue">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </span>
+    <section class="section section--surface" aria-labelledby="concept-title">
+      <div class="container">
+        <span class="section-label">CONCEPT</span>
+        <h2 id="concept-title" class="section-title">スクールではなく、コミュニティです</h2>
+        <p class="section-lead">ここは教わりに来る場所ではありません。一緒に学び、試して、教え合う場所です。</p>
+        <ol class="concept-list">
+          <li>
             <h3>一緒に学ぶ</h3>
             <p>最新AIを仲間と試しながら理解していく。ひとりで詰まっても、ここには聞ける人がいる。</p>
-          </div>
-          <div class="concept-item">
-            <span class="concept-icon icon-teal">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-            </span>
+          </li>
+          <li>
             <h3>自分から動く</h3>
             <p>初心者でも、わからないことを試して質問すれば成長できます。少し理解できてきたら、今度は困っている人に教えてあげる番。その積み重ねが、自分にとっても仲間にとっても一番の学びになります。</p>
-          </div>
-          <div class="concept-item">
-            <span class="concept-icon icon-green">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
-            </span>
+          </li>
+          <li>
             <h3>教え合う</h3>
             <p>教える側も学びになる。初心者も、少し先を行く人も、互いに引き上げ合うのがこのコミュニティのスタイルです。</p>
-          </div>
-        </div>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!-- KEITO監修セクション -->
-    <section id="supervisor" class="section">
-      <div class="section-inner narrow">
-        <h2 class="section-title">KEITO監修のコミュニティです</h2>
-        <div class="supervisor-card">
+    <!-- 監修 -->
+    <section id="supervisor" class="section" aria-labelledby="supervisor-title">
+      <div class="container">
+        <span class="section-label">SUPERVISOR</span>
+        <h2 id="supervisor-title" class="section-title">KEITO監修のコミュニティです</h2>
+        <div class="supervisor" style="margin-top: 48px;">
           <div class="supervisor-photo">
-            <img src="assets/keito.png" alt="KEITO" loading="lazy">
+            <img src="assets/keito.png" alt="KEITOさんの写真" width="320" height="320">
           </div>
-          <div class="supervisor-body">
-            <p class="supervisor-name">KEITO</p>
-            <p class="supervisor-title">ちばらきAIコミュニティ 監修</p>
-            <p class="supervisor-bio">
-              常磐線エリアを拠点に活動するAIエバンジェリスト。「AIは難しいものではなく、使えば面白くなるもの」をテーマに、地域に根ざしたAI教育を推進。このコミュニティは「地元で気軽にAIを学べる場所を作りたい」という思いから立ち上がりました。
-            </p>
-            <!-- TODO: KEITOさんのSNSリンクを追加 -->
+          <div>
+            <h3 class="supervisor-name">KEITO</h3>
+            <p class="supervisor-role">ちばらきAIコミュニティ 監修</p>
+            <p class="supervisor-bio">常磐線エリアを拠点に活動するAIエバンジェリスト。「AIは難しいものではなく、使えば面白くなるもの」をテーマに、地域に根ざしたAI教育を推進。このコミュニティは「地元で気軽にAIを学べる場所を作りたい」という思いから立ち上がりました。</p>
+            <p class="supervisor-note">勉強会のカリキュラム設計・教材監修をKEITOが担当。「初心者でも挫折しない」コンテンツを一貫して監修しています。</p>
           </div>
         </div>
-        <p class="supervisor-note">
-          勉強会のカリキュラム設計・教材監修をKEITOが担当。「初心者でも挫折しない」コンテンツを一貫して監修しています。
-        </p>
       </div>
     </section>
 
     <!-- 活動内容 -->
-    <section id="activities" class="section section-alt">
-      <div class="section-inner">
-        <h2 class="section-title">活動内容</h2>
+    <section id="activities" class="section section--surface" aria-labelledby="activities-title">
+      <div class="container">
+        <span class="section-label">ACTIVITIES</span>
+        <h2 id="activities-title" class="section-title">活動内容</h2>
         <p class="section-lead">「まず楽しく、手を動かす」がモットー。月1回のオフライン勉強会を中心に、普段はDiscordでオンライン交流します。</p>
-        <div class="card-grid three">
-          <div class="card">
-            <div class="card-icon icon-blue">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-            </div>
-            <h3>月1回・オフライン勉強会</h3>
-            <p>ChatGPT・Claude・画像生成AIなどの最新活用法を、ハンズオン形式で一緒に試します。メンバー同士で教え合いながら進める、初心者歓迎の勉強会です。</p>
+        <dl class="activity-list">
+          <div>
+            <dt>月1回・オフライン勉強会</dt>
+            <dd>ChatGPT・Claude・画像生成AIなどの最新活用法を、ハンズオン形式で一緒に試します。メンバー同士で教え合いながら進める、初心者歓迎の勉強会です。</dd>
           </div>
-          <div class="card">
-            <div class="card-icon icon-teal">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-            </div>
-            <h3>Discordでオンライン交流</h3>
-            <p>普段はDiscordで「最近のAIネタ」「使ってみた報告」をゆるく共有。質問・雑談・情報交換がいつでもできます。</p>
+          <div>
+            <dt>Discordでオンライン交流</dt>
+            <dd>普段はDiscordで「最近のAIネタ」「使ってみた報告」をゆるく共有。質問・雑談・情報交換がいつでもできます。</dd>
           </div>
-          <div class="card">
-            <div class="card-icon icon-green">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-            </div>
-            <h3>共同制作ワークショップ</h3>
-            <p>みんなでAIを使って動画・音楽・アプリ・地域コンテンツを共同制作。作って遊びながら身につけます。</p>
+          <div>
+            <dt>共同制作ワークショップ</dt>
+            <dd>みんなでAIを使って動画・音楽・アプリ・地域コンテンツを共同制作。作って遊びながら身につけます。</dd>
           </div>
-        </div>
-        <div class="venue-note">
-          <h3>活動場所</h3>
-          <p>松戸・柏・我孫子・取手・土浦・北千住エリアの駅近レンタルスペースで月1回開催。普段の交流はDiscordで。</p>
-        </div>
+        </dl>
+        <p class="activity-place"><strong>活動場所:</strong> 松戸・柏・我孫子・取手・土浦・北千住エリアの駅近レンタルスペースで月1回開催。普段の交流はDiscordで。</p>
       </div>
     </section>
 
-    <!-- ステップ：LINEから始める -->
-    <section class="section section-alt">
-      <div class="section-inner">
-        <h2 class="section-title">まずはLINEから始めてください</h2>
+    <!-- ステップ -->
+    <section class="section" aria-labelledby="steps-title">
+      <div class="container">
+        <span class="section-label">HOW TO JOIN</span>
+        <h2 id="steps-title" class="section-title">まずはLINEから始めてください</h2>
         <ol class="steps">
-          <li class="step">
-            <div class="step-num">1</div>
-            <div class="step-body">
-              <h3>LINE公式アカウントに登録</h3>
-              <p>登録すると、AI活用情報のメルマガや、次回の無料イベント案内が届きます。費用はかかりません。</p>
-            </div>
+          <li>
+            <h3>LINE公式アカウントに登録</h3>
+            <p>登録すると、AI活用情報のメルマガや、次回の無料イベント案内が届きます。費用はかかりません。</p>
           </li>
-          <li class="step">
-            <div class="step-num">2</div>
-            <div class="step-body">
-              <h3>無料イベントに参加してみる</h3>
-              <p>LINEで届く案内から、気になるイベントに参加してください。会場の雰囲気や、メンバーの空気感をまず体験してください。</p>
-            </div>
+          <li>
+            <h3>無料イベントに参加してみる</h3>
+            <p>LINEで届く案内から、気になるイベントに参加してください。会場の雰囲気や、メンバーの空気感をまず体験してください。</p>
           </li>
-          <li class="step">
-            <div class="step-num">3</div>
-            <div class="step-body">
-              <h3>気に入ったら有料会員へ</h3>
-              <p>「続けたい」と思ったら、月額3,000円の有料会員になれます。案内はLINEでお送りします。</p>
-            </div>
+          <li>
+            <h3>気に入ったら有料会員へ</h3>
+            <p>「続けたい」と思ったら、月額3,000円の<a href="membership.html">有料会員</a>になれます。案内はLINEでお送りします。</p>
           </li>
         </ol>
-        <div class="center" style="margin-top: 2.5rem;">
-          <a href="https://lin.ee/UhTqLIS" class="btn btn-primary" target="_blank" rel="noopener noreferrer">LINEで無料登録する</a>
-        </div>
+        <p style="margin-top: 48px;">
+          <a href="https://lin.ee/UhTqLIS" class="btn btn--primary" target="_blank" rel="noopener noreferrer">LINEで無料登録する</a>
+        </p>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section id="faq" class="section">
-      <div class="section-inner narrow">
-        <h2 class="section-title">よくある質問</h2>
-        <details class="faq-item">
-          <summary>AI初心者でも参加できますか？</summary>
-          <p>はい、むしろ初心者歓迎です。「AIって何?」という状態から参加された方も多く、講師とメンバーが丁寧にサポートします。</p>
-        </details>
-        <details class="faq-item">
-          <summary>どんなイベントが開催されますか？</summary>
-          <p>月1回のオフライン勉強会を開催しています。普段はDiscordでオンライン交流します。直近の開催情報はLINEでお知らせします。</p>
-        </details>
-        <details class="faq-item">
-          <summary>有料会員とはどう違いますか？</summary>
-          <p>LINE登録（無料）はイベント情報とAIメルマガを受け取れます。有料会員（月額3,000円）は月1回オフライン勉強会・Discord・アーカイブが使えます。案内はLINEでお送りします。</p>
-        </details>
-        <details class="faq-item">
-          <summary>どのエリアで開催していますか？</summary>
-          <p>松戸・柏・我孫子・取手・土浦・北千住エリアの駅近会場を中心に開催しています。このエリアに通勤・通学・在住の方が主な対象です。</p>
-        </details>
+    <section id="faq" class="section section--surface" aria-labelledby="faq-title">
+      <div class="container">
+        <span class="section-label">FAQ</span>
+        <h2 id="faq-title" class="section-title">よくある質問</h2>
+        <div class="faq-list">
+          <details>
+            <summary>AI初心者でも参加できますか？</summary>
+            <p class="faq-answer">はい、むしろ初心者歓迎です。「AIって何?」という状態から参加された方も多く、講師とメンバーが丁寧にサポートします。</p>
+          </details>
+          <details>
+            <summary>どんなイベントが開催されますか？</summary>
+            <p class="faq-answer">月1回のオフライン勉強会を開催しています。普段はDiscordでオンライン交流します。直近の開催情報はLINEでお知らせします。</p>
+          </details>
+          <details>
+            <summary>有料会員とはどう違いますか？</summary>
+            <p class="faq-answer">LINE登録（無料）はイベント情報とAIメルマガを受け取れます。有料会員（月額3,000円）は月1回オフライン勉強会・Discord・アーカイブが使えます。案内はLINEでお送りします。詳しくは<a href="membership.html">有料会員について</a>をご覧ください。</p>
+          </details>
+          <details>
+            <summary>どのエリアで開催していますか？</summary>
+            <p class="faq-answer">松戸・柏・我孫子・取手・土浦・北千住エリアの駅近会場を中心に開催しています。このエリアに通勤・通学・在住の方が主な対象です。</p>
+          </details>
+        </div>
       </div>
     </section>
 
     <!-- 最終CTA -->
-    <section class="section cta-section">
-      <div class="section-inner narrow center">
-        <h2 class="cta-title">まずは無料イベントで<br>会いましょう。</h2>
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 id="cta-title">まずは無料イベントで会いましょう。</h2>
         <p>LINEに登録すると、次回の無料AIセミナーの案内をお届けします。</p>
-        <div class="hero-actions">
-          <a href="https://lin.ee/UhTqLIS" class="btn btn-primary" target="_blank" rel="noopener noreferrer">LINEで無料登録する</a>
-        </div>
+        <a href="https://lin.ee/UhTqLIS" class="btn btn--primary" target="_blank" rel="noopener noreferrer">LINEで無料登録する</a>
       </div>
     </section>
 
   </main>
 
   <footer class="site-footer">
-    <div class="footer-inner">
-      <img src="assets/logo.webp" alt="" class="footer-logo">
-      <p class="footer-name">ちばらきAIコミュニティ</p>
-      <p class="footer-desc">松戸・柏・我孫子・取手・土浦・北千住エリアのAI学習コミュニティ</p>
-      <p class="footer-links"><a href="tokushoho.html">特定商取引法に基づく表記</a></p>
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">
+          <img src="assets/logo.webp" alt="" width="32" height="32">
+          <span>ちばらきAIコミュニティ</span>
+        </p>
+        <p class="footer-desc">松戸・柏・我孫子・取手・土浦・北千住エリアのAI学習コミュニティ</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="membership.html">有料会員について</a></li>
+        <li><a href="tokushoho.html">特定商取引法に基づく表記</a></li>
+      </ul>
       <p class="copyright">&copy; 2026 ちばらきAIコミュニティ / SOUTH</p>
     </div>
   </footer>
 
-  <script type="module" src="assets/bg.js"></script>
 </body>
 </html>
