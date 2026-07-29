@@ -859,18 +859,20 @@ ul, ol { list-style: none; }
 }
 .hero-inner { position: relative; z-index: 1; }
 
-/* 修正2: 波（セクション区切り）にゆったりした揺れを付ける */
+/* 修正2: 波（全セクション区切り）を流れるように動かす */
 @keyframes wave-drift {
-  0%, 100% { transform: translateX(0); }
-  50% { transform: translateX(-2.5%); }
+  0%, 100% { transform: translateX(0) scaleY(1); }
+  50%      { transform: translateX(-5%) scaleY(1.12); }
 }
 .curve svg {
-  width: 110%;
-  margin-left: -5%;
-  animation: wave-drift 11s ease-in-out infinite;
+  width: 114%;
+  margin-left: -7%;
+  animation: wave-drift 9s ease-in-out infinite;
+  transform-origin: bottom center;
   will-change: transform;
 }
-.curve-bottom svg { animation-duration: 13s; animation-direction: reverse; }
+.curve-top svg { transform-origin: top center; animation-duration: 10s; }
+.curve-bottom svg { transform-origin: bottom center; animation-duration: 12s; animation-direction: reverse; }
 
 /* 修正1: スマホでコンセプト3カードを横並び（アイコン左・テキスト右）*/
 @media (max-width: 640px) {
