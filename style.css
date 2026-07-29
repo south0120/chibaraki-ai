@@ -833,12 +833,13 @@ ul, ol { list-style: none; }
     display: grid;
     grid-template-columns: 48px 1fr;
     column-gap: 16px;
-    align-items: start;
+    align-items: center;   /* アイコンをテキストに対して垂直中央 */
     text-align: left;
     padding: 20px;
   }
   #concept .card-blob {
     grid-row: 1 / span 2;
+    align-self: center;
     width: 48px;
     height: 48px;
     margin: 0;
