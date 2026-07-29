@@ -706,6 +706,7 @@ ul, ol { list-style: none; }
   .hero-visual { order: -1; }
   .hero-blob { width: min(260px, 64vw); }
   .card-grid { grid-template-columns: 1fr; }
+  .card-grid.cols-4 { grid-template-columns: repeat(2, 1fr); }
   .step-list, .step-list.cols-4 { grid-template-columns: 1fr; gap: 44px; }
   .trust-card { grid-template-columns: 1fr; }
   .trust-card-photo { padding: 32px 24px 20px; }
@@ -730,50 +731,61 @@ ul, ol { list-style: none; }
 }
 
 /* ---------- 課題カード（commune風フラットイラスト） ---------- */
-.card--illus { padding-top: 30px; }
+.card--illus {
+  padding-top: 28px;
+  display: flex;
+  flex-direction: column;
+}
 .kadai-figure {
-  width: 210px;
-  height: 210px;
-  margin: 0 auto 22px;
+  width: 172px;
+  height: 172px;
+  margin: 0 auto 18px;
   background: var(--sky-pale);
   border-radius: 50%;
   display: grid;
   place-items: center;
   position: relative;
+  flex: none;
 }
 .kadai-figure::after {
   /* フローティング感を出す淡い水色の小円 */
   content: "";
   position: absolute;
-  width: 26px;
-  height: 26px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   background: var(--sky-pale-2);
-  top: 6%;
-  right: 8%;
+  top: 4%;
+  right: 6%;
   z-index: 0;
 }
 .kadai-figure img {
-  width: 122%;
-  max-width: 122%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* 丸の中に完全に収める＝テキストと重ならない */
   position: relative;
   z-index: 1;
   mix-blend-mode: multiply; /* 白背景イラストを水色丸に自然に馴染ませる */
 }
-.card--illus h3 { margin-top: 4px; }
+.card--illus h3 { margin-top: 2px; }
 
-/* ---------- ①中央デバイス＋左右人物（commune hero下風） ---------- */
+/* 4カラム（課題「こんな方へ」） */
+.card-grid.cols-4 { grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.card-grid.cols-4 .card { padding: 30px 20px; }
+
+/* ---------- ①中央デバイス＋左右人物（commune hero下風・multiplyで背景抜き） ---------- */
+.device-section { padding-top: 40px; padding-bottom: 72px; }
 .device-panel {
-  background: var(--sky-pale);
-  border-radius: 28px;
-  padding: 28px;
-  max-width: 940px;
+  max-width: 900px;
   margin: 0 auto;
   display: grid;
   place-items: center;
 }
-.device-panel img { width: 100%; height: auto; border-radius: 14px; }
+.device-panel img {
+  width: 100%;
+  height: auto;
+  mix-blend-mode: multiply; /* 白背景を抜いてページに自然に溶け込ませる */
+}
 
 /* ---------- ②左大イラスト＋右テキスト（commune「最も選ばれている」風） ---------- */
 .strength-grid {
@@ -814,8 +826,8 @@ ul, ol { list-style: none; }
   .strength-body .section-title { text-align: center; }
 }
 @media (max-width: 600px) {
-  .kadai-figure { width: 180px; height: 180px; }
-  .device-panel { padding: 18px; border-radius: 20px; }
+  .kadai-figure { width: 168px; height: 168px; }
+  .card-grid.cols-4 { grid-template-columns: 1fr; }
 }
 
 /* a11y override: CTA contrast AA (white on Primary was ~2.75:1) */
