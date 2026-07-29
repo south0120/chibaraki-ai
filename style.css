@@ -696,6 +696,7 @@ ul, ol { list-style: none; }
   html { scroll-behavior: auto; }
   .hero-blob { animation: none; }
   .curve svg { animation: none; width: 100%; margin-left: 0; }
+  .hero-particles .p { animation: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .btn, .faq-toggle { transition: none; }
   .btn-primary:hover, .btn-header:hover, .btn-ghost:hover { transform: none; }
@@ -827,6 +828,36 @@ ul, ol { list-style: none; }
   .kadai-figure { width: 168px; height: 168px; }
   .card-grid.cols-4 { grid-template-columns: 1fr; }
 }
+
+/* 背景アニメ: ヒーローに浮遊する小さな泡/粒（過剰にならない程度） */
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+.hero-particles .p {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  background: var(--sky-pale-2);
+  opacity: .55;
+  animation: particle-float 14s ease-in-out infinite;
+}
+.hero-particles .p1 { width: 14px; height: 14px; left: 8%;  top: 62%; animation-duration: 13s; }
+.hero-particles .p2 { width: 10px; height: 10px; left: 20%; top: 30%; animation-duration: 17s; background: #fff; }
+.hero-particles .p3 { width: 22px; height: 22px; left: 34%; top: 74%; animation-duration: 19s; }
+.hero-particles .p4 { width: 8px;  height: 8px;  left: 48%; top: 20%; animation-duration: 15s; background: #fff; }
+.hero-particles .p5 { width: 16px; height: 16px; left: 63%; top: 68%; animation-duration: 21s; }
+.hero-particles .p6 { width: 11px; height: 11px; left: 78%; top: 40%; animation-duration: 16s; background: #fff; }
+.hero-particles .p7 { width: 26px; height: 26px; left: 88%; top: 78%; animation-duration: 23s; }
+.hero-particles .p8 { width: 9px;  height: 9px;  left: 92%; top: 24%; animation-duration: 18s; }
+@keyframes particle-float {
+  0%, 100% { transform: translateY(0) translateX(0); opacity: .5; }
+  50%      { transform: translateY(-22px) translateX(6px); opacity: .8; }
+}
+.hero-inner { position: relative; z-index: 1; }
 
 /* 修正2: 波（セクション区切り）にゆったりした揺れを付ける */
 @keyframes wave-drift {
