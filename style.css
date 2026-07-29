@@ -91,7 +91,10 @@ ul, ol { list-style: none; }
   line-height: 0;
   pointer-events: none;
 }
-.curve svg { display: block; width: 100%; height: 64px; }
+.curve { height: 64px; }
+.curve svg { display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+.curve .wave-back { z-index: 1; }
+.curve .wave-front { z-index: 2; }
 .curve-top { top: -1px; }
 .curve-bottom { bottom: -1px; }
 .sec-sky.has-curve-top { padding-top: 140px; }
@@ -719,7 +722,7 @@ ul, ol { list-style: none; }
   .section { padding: 64px 20px; }
   .sec-sky.has-curve-top { padding-top: 110px; }
   .sec-sky.has-curve-bottom { padding-bottom: 110px; }
-  .curve svg { height: 40px; }
+  .curve { height: 40px; }
   .hero { padding: 48px 20px 80px; }
   .btn-primary { width: 100%; padding: 16px 24px; }
   .news-bar-inner { padding: 14px 18px; }
@@ -862,17 +865,22 @@ ul, ol { list-style: none; }
 /* 修正2: 波（全セクション区切り）を流れるように動かす */
 @keyframes wave-drift {
   0%, 100% { transform: translateX(0) scaleY(1); }
-  50%      { transform: translateX(-5%) scaleY(1.12); }
+  50%      { transform: translateX(-12%) scaleY(1.18); }
 }
 .curve svg {
-  width: 114%;
-  margin-left: -7%;
-  animation: wave-drift 9s ease-in-out infinite;
+  width: 134%;
+  margin-left: -17%;
+  animation: wave-drift 4s ease-in-out infinite;
   transform-origin: bottom center;
   will-change: transform;
 }
-.curve-top svg { transform-origin: top center; animation-duration: 10s; }
-.curve-bottom svg { transform-origin: bottom center; animation-duration: 12s; animation-direction: reverse; }
+/* 前面（白）と背面（薄い青）で速度・向きをずらし、重なりの動きを見せる */
+.curve .wave-front { animation-duration: 4s; }
+.curve .wave-back  { animation-duration: 6s; animation-direction: reverse; }
+.curve-top svg { transform-origin: top center; }
+.curve-bottom svg { transform-origin: bottom center; }
+.curve-bottom .wave-front { animation-direction: reverse; }
+.curve-bottom .wave-back  { animation-direction: normal; }
 
 /* 修正1: スマホでコンセプト3カードを横並び（アイコン左・テキスト右）*/
 @media (max-width: 640px) {
