@@ -4,17 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>有料会員について｜ちばらきAIコミュニティ</title>
-  <meta name="description" content="ちばらきAIコミュニティの有料会員（月額3,000円）の詳細ページ。月1回オフライン勉強会・メンバー限定Discord・アーカイブ閲覧など。">
   <meta name="robots" content="noindex">
+  <meta name="description" content="ちばらきAIコミュニティの有料会員（月額3,000円・税込）について。月1回のオフライン勉強会とDiscordオンラインコミュニティに参加できます。">
   <meta property="og:title" content="有料会員について｜ちばらきAIコミュニティ">
-  <meta property="og:description" content="月額3,000円。月2〜3回のAI勉強会・ワークショップ参加し放題、メンバー限定Discord、アーカイブ閲覧。">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo.png">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
@@ -24,37 +25,42 @@
         <img src="assets/logo.webp" alt="ちばらきAIコミュニティ ロゴ" class="brand-logo">
         <span class="brand-name">ちばらき<span class="brand-ai">AI</span>コミュニティ</span>
       </a>
-      <nav class="global-nav">
-        <a href="index.html">トップ</a>
-        <a href="index.html#activities">活動内容</a>
-        <a href="index.html#supervisor">監修</a>
-        <a href="index.html#faq">FAQ</a>
+      <nav class="global-nav" aria-label="グローバルナビゲーション">
+        <a href="https://lin.ee/UhTqLIS" class="btn btn-amber" target="_blank" rel="noopener noreferrer">LINE登録（無料）</a>
       </nav>
-      <a href="https://lin.ee/UhTqLIS" class="header-cta" target="_blank" rel="noopener noreferrer">LINE登録（無料）</a>
     </div>
   </header>
 
   <main>
 
-    <!-- ページヘッド -->
-    <section class="section" style="padding-top: 4rem; text-align: center;">
-      <div class="section-inner narrow center">
-        <img src="assets/logo.webp" alt="ちばらきAIコミュニティ" style="width:100px;height:100px;margin-bottom:1rem;filter:drop-shadow(0 6px 16px rgba(45,62,80,0.12));">
-        <h1 class="section-title">有料会員について</h1>
-        <p class="section-lead">オフラインで仲間と一緒に学ぶ。それがこのコミュニティの核心です。</p>
+    <section class="page-hero">
+      <div class="inner">
+        <h1>有料会員について</h1>
+        <p class="page-lead">オフラインで仲間と一緒に学ぶ。それがこのコミュニティの核心です。</p>
       </div>
     </section>
 
-    <!-- 価格カード -->
-    <section class="section section-alt">
-      <div class="section-inner">
-        <div class="pricing-grid" style="max-width: 480px; margin: 0 auto; grid-template-columns: 1fr;">
-          <div class="price-card featured" style="width: 100%;">
-            <div class="plan-badge">レギュラー会員</div>
-            <h2 class="plan-name" style="font-size: 1.1rem; margin-bottom: 0.25rem;">月額サブスクリプション</h2>
-            <p class="plan-price"><span class="amount">¥3,000</span><span class="per">/月（税込）</span></p>
-            <p style="font-size: 0.85rem; color: var(--muted); margin-bottom: 1.5rem;">月1回オフライン勉強会＋Discordオンラインコミュニティへの参加</p>
-            <ul class="plan-features">
+    <!-- 価格 -->
+    <section class="section--tight">
+      <div class="inner">
+        <div class="price-wrap">
+          <div class="price-card reveal">
+            <div class="price-band">
+              <span class="plan-badge">レギュラー会員</span>
+              <span class="plan-type">月額サブスクリプション</span>
+            </div>
+            <div class="price-body">
+              <p class="price-amount">¥3,000<small>/月（税込）</small></p>
+              <p class="price-desc">月1回オフライン勉強会＋Discordオンラインコミュニティへの参加</p>
+              <div class="price-cta">
+                <button type="button" class="btn btn-disabled btn-block" disabled aria-disabled="true">🔜 準備中（近日公開）</button>
+                <p class="cancel-note">いつでも解約できます。解約後は次回請求が発生しません。</p>
+              </div>
+            </div>
+          </div>
+          <div class="benefit-panel reveal">
+            <h2>会員特典</h2>
+            <ul class="benefit-list">
               <li>月1回のオフライン勉強会に参加できる（KEITO監修カリキュラム）</li>
               <li>メンバー限定Discordでオンライン交流（会員ロール付与）</li>
               <li>勉強会アーカイブ・資料の閲覧</li>
@@ -62,74 +68,69 @@
               <li>共同制作プロジェクトへの参加</li>
               <li>次回イベントの優先案内・会員枠での申込</li>
             </ul>
-            <span class="btn btn-primary btn-block" style="opacity:0.5;cursor:not-allowed;pointer-events:none;">🔜 準備中（近日公開）</span>
-            <p class="plan-note">いつでも解約できます。解約後は次回請求が発生しません。</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 特典詳細 -->
+    <!-- Discordでできること -->
     <section class="section">
-      <div class="section-inner">
-        <h2 class="section-title">メンバー限定Discordでできること</h2>
-        <div class="card-grid three">
-          <div class="card">
-            <div class="card-icon icon-blue">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-            </div>
+      <div class="inner">
+        <div class="sec-head reveal">
+          <span class="kicker">MEMBERS ONLY</span>
+          <h2>メンバー限定Discordでできること</h2>
+        </div>
+        <div class="discord-grid">
+          <article class="discord-card reveal">
             <h3>イベント優先申込</h3>
-            <p>勉強会・ワークショップの開催情報をいち早くキャッチ。会員枠で優先的に申し込めます。</p>
-          </div>
-          <div class="card">
-            <div class="card-icon icon-teal">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
-            </div>
+            <p>次回の勉強会・ワークショップを優先案内。会員枠で申し込めます。</p>
+          </article>
+          <article class="discord-card reveal">
             <h3>アーカイブ・資料</h3>
-            <p>参加できなかった回も安心。勉強会のスライドや録画をいつでも見返せます。</p>
-          </div>
-          <div class="card">
-            <div class="card-icon icon-green">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
-            </div>
+            <p>過去の勉強会アーカイブや配布資料をいつでも閲覧できます。</p>
+          </article>
+          <article class="discord-card reveal">
             <h3>質問・雑談チャンネル</h3>
-            <p>AIの疑問をいつでも質問OK。ツール情報の共有や、地元ネタの雑談も盛り上がっています。</p>
-          </div>
+            <p>AIの質問も、使ってみた報告も、雑談も。いつでも聞ける場所があります。</p>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- 入会の流れ -->
-    <section class="section section-alt">
-      <div class="section-inner">
-        <h2 class="section-title">入会の流れ</h2>
+    <section class="section">
+      <div class="inner">
+        <div class="sec-head reveal">
+          <span class="kicker">FLOW</span>
+          <h2>入会の流れ</h2>
+        </div>
         <ol class="steps">
-          <li class="step">
-            <div class="step-num">1</div>
-            <div class="step-body">
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">1</span>
+            <div>
               <h3>まずは無料イベントへ（推奨）</h3>
-              <p>まだ無料イベントに参加したことがない方は、まず<a href="index.html">トップページ</a>からLINE登録してイベントに参加してみてください。</p>
+              <p>いきなり入会しなくて大丈夫。LINEで案内する無料イベントで、雰囲気を体験してから決めてください。</p>
             </div>
           </li>
-          <li class="step">
-            <div class="step-num">2</div>
-            <div class="step-body">
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">2</span>
+            <div>
               <h3>Stripeで月額決済</h3>
-              <p>上の「Stripeで決済して入会する」ボタンから、月額3,000円のサブスクリプションに登録します。クレジットカード対応。</p>
+              <p>クレジットカードで月額3,000円（税込）の決済を行います。（決済は現在準備中です）</p>
             </div>
           </li>
-          <li class="step">
-            <div class="step-num">3</div>
-            <div class="step-body">
-              <h3>Discordに参加</h3>
-              <p>決済完了後、Discordの招待リンクをご案内します（通常24時間以内）。</p>
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">3</span>
+            <div>
+              <h3>Discordに参加（通常24時間以内）</h3>
+              <p>決済完了後の案内に従って、メンバー限定Discordサーバーに参加します。</p>
             </div>
           </li>
-          <li class="step">
-            <div class="step-num">4</div>
-            <div class="step-body">
-              <h3>会員ロールが付与されて利用開始</h3>
-              <p>「レギュラー会員」ロールが付与され、メンバー限定チャンネル・イベント申込・アーカイブが閲覧できるようになります。</p>
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">4</span>
+            <div>
+              <h3>会員ロール付与で利用開始</h3>
+              <p>運営が確認後、会員ロールを付与。勉強会・アーカイブ・各チャンネルが使えるようになります。</p>
             </div>
           </li>
         </ol>
@@ -138,56 +139,78 @@
 
     <!-- FAQ -->
     <section class="section">
-      <div class="section-inner narrow">
-        <h2 class="section-title">よくある質問</h2>
-        <details class="faq-item">
-          <summary>解約はいつでもできますか？</summary>
-          <p>はい。Stripeの管理画面からいつでも解約できます。解約すると次回請求は発生せず、Discordの会員ロールが解除されます。日割り返金はありません。</p>
-        </details>
-        <details class="faq-item">
-          <summary>返金はできますか？</summary>
-          <p>サービスの性質上、決済完了後の返金はお受けしておりません。まずは無料イベントにご参加いただき、雰囲気を確かめてから入会されることをおすすめします。</p>
-        </details>
-        <details class="faq-item">
-          <summary>支払い方法は？</summary>
-          <p>クレジットカード（Stripe経由）のみ対応しています。</p>
-        </details>
-        <details class="faq-item">
-          <summary>毎月のイベントには必ず参加しないといけませんか？</summary>
-          <p>参加は任意です。参加できなかった回はアーカイブで見返せます。ただし、このコミュニティの核心はオフラインで実際に会うことです。ぜひ一度会場に来てみてください。</p>
-        </details>
-        <details class="faq-item">
-          <summary>申し込み後、Discordにいつ参加できますか？</summary>
-          <p>通常、決済確認後24時間以内にDiscordの招待リンクをご案内します。</p>
-        </details>
-      </div>
-    </section>
-
-    <!-- 最終CTA -->
-    <section class="section cta-section">
-      <div class="section-inner narrow center">
-        <h2 class="cta-title">まずは、無料イベントで会いましょう。</h2>
-        <p>入会前に雰囲気を確かめたい方は、まずLINE登録から。</p>
-        <div class="hero-actions">
-          <span class="btn btn-primary" style="opacity:0.5;cursor:not-allowed;pointer-events:none;">🔜 準備中（近日公開）</span>
-          <a href="https://lin.ee/UhTqLIS" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">LINE登録から始める（無料）</a>
+      <div class="inner">
+        <div class="sec-head reveal">
+          <span class="kicker">FAQ</span>
+          <h2>よくある質問</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <p class="faq-q">解約はいつでもできますか？</p>
+            <p class="faq-a">はい、Stripeの管理画面からいつでも解約できます。解約後、次回請求は発生しません。日割りによる返金は行っておりません。</p>
+          </div>
+          <div class="faq-item reveal">
+            <p class="faq-q">決済完了後の返金はできますか？</p>
+            <p class="faq-a">サービスの性質上、決済完了後の返金はお受けしておりません。</p>
+          </div>
+          <div class="faq-item reveal">
+            <p class="faq-q">支払い方法は何が使えますか？</p>
+            <p class="faq-a">クレジットカード決済（Stripe）のみのご対応となります。</p>
+          </div>
+          <div class="faq-item reveal">
+            <p class="faq-q">イベントに毎回参加できなくても大丈夫ですか？</p>
+            <p class="faq-a">はい、参加は任意です。勉強会のアーカイブもご覧いただけます。ただし、このコミュニティの核心はオフラインでの交流です。ぜひ都合の合う回にご参加ください。</p>
+          </div>
+          <div class="faq-item reveal">
+            <p class="faq-q">Discordにはいつから参加できますか？</p>
+            <p class="faq-a">決済確認後、通常24時間以内にご参加いただけます。</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <p style="text-align:center; margin-bottom: 2rem;"><a href="index.html">← トップページへ戻る</a></p>
+    <!-- 最終CTA -->
+    <section class="final-cta">
+      <div class="inner">
+        <div class="final-cta-panel reveal">
+          <h2>まずは、無料イベントで会いましょう。</h2>
+          <p>入会を迷っている方も、まずはLINE登録から。無料イベントの案内が届きます。</p>
+          <button type="button" class="btn btn-disabled" disabled aria-disabled="true">🔜 準備中（近日公開）</button>
+          <div><a href="https://lin.ee/UhTqLIS" class="btn btn-amber" target="_blank" rel="noopener noreferrer">LINE登録から始める（無料）</a></div>
+        </div>
+        <p class="back-link"><a href="index.html">← トップページへ戻る</a></p>
+      </div>
+    </section>
 
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <img src="assets/logo.webp" alt="" class="footer-logo">
-      <p class="footer-name">ちばらきAIコミュニティ</p>
-      <p class="footer-desc">松戸・柏・我孫子・取手・土浦・北千住エリアのAI学習コミュニティ</p>
+      <div class="footer-brand">
+        <img src="assets/logo.webp" alt="">
+        <span class="brand-name">ちばらき<span class="brand-ai">AI</span>コミュニティ</span>
+      </div>
+      <p class="footer-area">松戸・柏・我孫子・取手・土浦・北千住エリアのAI学習コミュニティ</p>
       <p class="footer-links"><a href="tokushoho.html">特定商取引法に基づく表記</a></p>
       <p class="copyright">&copy; 2026 ちばらきAIコミュニティ / SOUTH</p>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
 
 </body>
 </html>
