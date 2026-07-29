@@ -698,7 +698,7 @@ ul, ol { list-style: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .hero-blob { animation: none; }
-  .curve svg { animation: none; width: 100%; margin-left: 0; }
+  .curve svg { animation: none; width: 200%; margin-left: 0; transform: translateX(0); }
   .hero-particles .p { animation: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .btn, .faq-toggle { transition: none; }
@@ -862,25 +862,21 @@ ul, ol { list-style: none; }
 }
 .hero-inner { position: relative; z-index: 1; }
 
-/* 修正2: 波（全セクション区切り）を流れるように動かす */
-@keyframes wave-drift {
-  0%, 100% { transform: translateX(0) scaleY(1); }
-  50%      { transform: translateX(-12%) scaleY(1.18); }
+/* 修正2: 波（全セクション区切り）を右→左へ永遠に流し続ける。
+   SVGは同一波形を2周期ぶん(2880幅)並べ、-50%移動でシームレスループ。*/
+@keyframes wave-flow {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 .curve svg {
-  width: 134%;
-  margin-left: -17%;
-  animation: wave-drift 4s ease-in-out infinite;
-  transform-origin: bottom center;
+  width: 200%;
+  margin-left: 0;
+  animation: wave-flow 4s linear infinite;
   will-change: transform;
 }
-/* 前面（白）と背面（薄い青）で速度・向きをずらし、重なりの動きを見せる */
+/* 前面（白）と背面（薄い青）は同方向・速度差だけつけて2層感を出す */
 .curve .wave-front { animation-duration: 4s; }
-.curve .wave-back  { animation-duration: 6s; animation-direction: reverse; }
-.curve-top svg { transform-origin: top center; }
-.curve-bottom svg { transform-origin: bottom center; }
-.curve-bottom .wave-front { animation-direction: reverse; }
-.curve-bottom .wave-back  { animation-direction: normal; }
+.curve .wave-back  { animation-duration: 6s; }
 
 /* 修正1: スマホでコンセプト3カードを横並び（アイコン左・テキスト右）*/
 @media (max-width: 640px) {
