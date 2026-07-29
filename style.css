@@ -781,7 +781,7 @@ ul, ol { list-style: none; }
 .concept-device img {
   width: 100%;
   height: auto;
-  mix-blend-mode: multiply; /* sky-pale背景に白を抜いて自然に合成・枠なし */
+  /* 背景透過PNGのため合成不要・枠なしで自然に表示 */
 }
 
 /* ---------- ②左大イラスト＋右テキスト（commune「最も選ばれている」風） ---------- */
@@ -825,6 +825,27 @@ ul, ol { list-style: none; }
 @media (max-width: 600px) {
   .kadai-figure { width: 168px; height: 168px; }
   .card-grid.cols-4 { grid-template-columns: 1fr; }
+}
+
+/* 修正1: スマホでコンセプト3カードを横並び（アイコン左・テキスト右）*/
+@media (max-width: 640px) {
+  #concept .card {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    column-gap: 16px;
+    align-items: start;
+    text-align: left;
+    padding: 20px;
+  }
+  #concept .card-blob {
+    grid-row: 1 / span 2;
+    width: 48px;
+    height: 48px;
+    margin: 0;
+  }
+  #concept .card-blob svg { width: 26px; height: 26px; }
+  #concept .card h3 { text-align: left; margin-bottom: 6px; }
+  #concept .card p { text-align: left; }
 }
 
 /* a11y override: CTA contrast AA (white on Primary was ~2.75:1) */
