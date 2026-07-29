@@ -695,6 +695,7 @@ ul, ol { list-style: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .hero-blob { animation: none; }
+  .curve svg { animation: none; width: 100%; margin-left: 0; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .btn, .faq-toggle { transition: none; }
   .btn-primary:hover, .btn-header:hover, .btn-ghost:hover { transform: none; }
@@ -826,6 +827,19 @@ ul, ol { list-style: none; }
   .kadai-figure { width: 168px; height: 168px; }
   .card-grid.cols-4 { grid-template-columns: 1fr; }
 }
+
+/* 修正2: 波（セクション区切り）にゆったりした揺れを付ける */
+@keyframes wave-drift {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-2.5%); }
+}
+.curve svg {
+  width: 110%;
+  margin-left: -5%;
+  animation: wave-drift 11s ease-in-out infinite;
+  will-change: transform;
+}
+.curve-bottom svg { animation-duration: 13s; animation-direction: reverse; }
 
 /* 修正1: スマホでコンセプト3カードを横並び（アイコン左・テキスト右）*/
 @media (max-width: 640px) {
